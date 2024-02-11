@@ -1,0 +1,27 @@
+
+{% include 'index.html'%}
+<div class="container text-center">
+	<div class="col-md-8 offset-md-2">
+		<h1>Изменение статуса</h1>
+	</div>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Измените статус
+
+    <form method="POST" action="">
+        {{ form.csrf_token }}
+
+        {{ form.statusmaster.label }} {{ form.statusmaster() }}
+        <input type="submit" value="Go">
+    </form>
+</body>
+</html>

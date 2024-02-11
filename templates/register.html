@@ -1,0 +1,35 @@
+{% include 'index.html'%}
+<div class="container text-center">
+	<div class="col-md-8 offset-md-2">
+		<h1>REGISTER</h1>
+	</div>
+</div>
+
+<div class="container text-center">
+	<div class="col-md-8 offset-md-2">
+		<form method="POST" action="/register/">
+			<div>
+				<div class="mb-3">
+					<input type="text" name="username" placeholder="Username" required />
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<input type="email" name="email" placeholder="Email" required />
+			</div>
+
+			<div class="mb-3">
+				<input
+					type="password"
+					name="password"
+					placeholder="Password"
+					required
+				/>
+			</div>
+
+			<div>
+				<input class="btn btn-primary" type="submit" />
+			</div>
+		</form>
+	</div>
+</div>
